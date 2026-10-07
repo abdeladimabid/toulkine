@@ -420,85 +420,109 @@ header.solid-header {
   line-height: 1.6;
 }
 
-/* Itinerary Section */
-.itinerary-map-wrapper {
-  width: 100%;
-  height: 420px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-  margin-bottom: 3rem;
+/* Contact Map Grid Layout */
+.contact-map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 4rem;
 }
-.itinerary-map-wrapper iframe {
-  width: 100%;
-  height: 100%;
+.contact-text-card {
+  background: var(--color-white);
+  padding: 3.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-text-card h2 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+}
+.contact-map-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  background: #f9f9f9;
+  border: 1px solid rgba(0,0,0,0.03);
+  min-height: 400px;
+}
+.contact-map-card iframe {
   display: block;
 }
 
-.itinerary-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
+@media (max-width: 1024px) {
+  .contact-map-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contact-text-card {
+    padding: 2rem 1.5rem;
+  }
+  .contact-map-card {
+    min-height: 350px;
+  }
 }
 
-.itinerary-card {
-  flex: 1;
-  max-width: 250px;
-  background: var(--color-white);
-  border-radius: 16px;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+/* Itinerary Timeline */
+.itinerary-timeline {
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-left: 40px;
+  margin-top: 1.5rem;
 }
-.itinerary-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+.itinerary-timeline::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 5px;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-primary);
+  opacity: 0.2;
 }
-
-.card-number {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: rgba(204, 32, 20, 0.1);
-  line-height: 1;
-  margin-bottom: 0.5rem;
+.itinerary-step {
+  position: relative;
+  margin-bottom: 1.8rem;
 }
-
-.card-icon {
-  width: 50px;
-  height: 50px;
+.itinerary-step:last-child {
+  margin-bottom: 0;
+}
+.step-icon {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 30px;
+  height: 30px;
   background: var(--color-primary);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  margin: 0 auto 1rem;
+  font-size: 0.85rem;
+  box-shadow: 0 0 0 5px #ffffff;
+  z-index: 2;
 }
-
-.itinerary-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  color: var(--color-text);
-  margin-bottom: 0.5rem;
+.step-content {
+  padding-top: 4px;
 }
-
-.itinerary-card p {
-  font-size: 0.9rem;
-  color: rgba(0,0,0,0.6);
-  line-height: 1.5;
-  margin: 0;
-}
-
-.itinerary-card-divider {
+.step-content h3 {
   color: var(--color-primary);
-  font-size: 1.2rem;
-  padding: 0 0.8rem;
-  opacity: 0.4;
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+.step-content p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
 }
 
 /* --- Footer V2 --- */
@@ -647,24 +671,6 @@ header.solid-header {
     scroll-snap-align: center;
     grid-column: auto;
     grid-row: auto;
-  }
-  
-  /* Itinerary mobile */
-  .itinerary-map-wrapper {
-    height: 280px;
-    margin-bottom: 2rem;
-  }
-  .itinerary-cards {
-    flex-direction: column;
-    gap: 0;
-  }
-  .itinerary-card {
-    max-width: 100%;
-    padding: 1.5rem;
-  }
-  .itinerary-card-divider {
-    transform: rotate(90deg);
-    padding: 0.3rem 0;
   }
   
   header.nav-active {
