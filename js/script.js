@@ -1,22 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Menu Toggle
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const navLinks = document.querySelector('.nav-links');
+  const mobileMenuBtn = document.getElementById('mobile-menu');
+  const header = document.querySelector('header');
 
   if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+      header.classList.toggle('nav-active');
+      
+      // Change icon from bars to times when active
+      const icon = mobileMenuBtn.querySelector('i');
+      if (header.classList.contains('nav-active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
     });
   }
 
   // Active Link Highlighting
   const currentPath = window.location.pathname.split('/').pop();
-  const navItems = document.querySelectorAll('.nav-links a');
+  const navItems = document.querySelectorAll('header a');
   
   navItems.forEach(item => {
     const href = item.getAttribute('href');
     if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      item.classList.add('active');
+      // Don't add active color if it's the logo
+      if (!item.querySelector('img')) {
+        item.style.color = 'var(--color-primary)';
+      }
     }
   });
 
