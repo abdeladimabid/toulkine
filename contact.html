@@ -42,44 +42,39 @@
                     Le voyage vers Toulkine fait partie de l'expérience. Quittez la ville impériale et laissez la route s'élever vers le silence réparateur des montagnes.
                 </p>
                 
-                <div class="text-image-grid">
-                    <div class="grid-text">
-                        <h2>Itinéraire depuis Marrakech</h2>
-                        <p>À exactement 77 kilomètres de la ville rouge, Toulkine vous attend au cœur de la commune d'Azgour.</p>
-                        
-                        <div class="itinerary-timeline">
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                <div class="step-content">
-                                    <h3>Départ : Marrakech</h3>
-                                    <p>Quittez la ville en empruntant la route régionale R212, une belle route goudronnée à travers les plaines.</p>
-                                </div>
-                            </div>
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-route"></i></div>
-                                <div class="step-content">
-                                    <h3>Amizmiz & Azgour</h3>
-                                    <p>Traversez les magnifiques paysages vallonnés en passant par Amizmiz jusqu'à atteindre la commune d'Azgour.</p>
-                                </div>
-                            </div>
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-mountain"></i></div>
-                                <div class="step-content">
-                                    <h3>Ascension de l'Atlas</h3>
-                                    <p>La dernière portion de la route serpente vers les cimes. L'utilisation d'un véhicule 4x4 robuste est recommandée.</p>
-                                </div>
-                            </div>
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-flag-checkered"></i></div>
-                                <div class="step-content">
-                                    <h3>Arrivée : Toulkine</h3>
-                                    <p>Bienvenue dans notre village, perché dans son sanctuaire naturel.</p>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Full-width directions map -->
+                <div class="itinerary-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&origin=Marrakech,Morocco&destination=Toulkine,Al+Haouz,Morocco&mode=driving&maptype=terrain" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Itinerary steps as horizontal cards -->
+                <div class="itinerary-cards">
+                    <div class="itinerary-card">
+                        <div class="card-number">01</div>
+                        <div class="card-icon"><i class="fas fa-city"></i></div>
+                        <h3>Marrakech</h3>
+                        <p>Quittez la ville rouge en empruntant la R212 en direction du sud-ouest.</p>
                     </div>
-                    <div class="grid-image" style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); padding: 0; background: #eee; min-height: 400px;">
-                        <iframe src="https://maps.google.com/maps?q=Toulkine,%20Al%20Haouz,%20Morocco&t=p&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; position:absolute; top:0; left:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="itinerary-card-divider"><i class="fas fa-chevron-right"></i></div>
+                    <div class="itinerary-card">
+                        <div class="card-number">02</div>
+                        <div class="card-icon"><i class="fas fa-road"></i></div>
+                        <h3>Amizmiz</h3>
+                        <p>Traversez les paysages vallonnés sur une belle route goudronnée. ~45 km.</p>
+                    </div>
+                    <div class="itinerary-card-divider"><i class="fas fa-chevron-right"></i></div>
+                    <div class="itinerary-card">
+                        <div class="card-number">03</div>
+                        <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                        <h3>Azgour</h3>
+                        <p>L'ascension commence. Un véhicule 4x4 est recommandé pour les derniers lacets.</p>
+                    </div>
+                    <div class="itinerary-card-divider"><i class="fas fa-chevron-right"></i></div>
+                    <div class="itinerary-card">
+                        <div class="card-number">04</div>
+                        <div class="card-icon"><i class="fas fa-flag-checkered"></i></div>
+                        <h3>Toulkine</h3>
+                        <p>Bienvenue ! Vous êtes arrivé dans votre sanctuaire naturel du Haut Atlas.</p>
                     </div>
                 </div>
 
