@@ -40,7 +40,7 @@ img { max-width: 100%; display: block; }
    SECTION DARK
 =========================== */
 .section-dark {
-  background-color: #1a1a1a;
+  background-color: #3A120E;
   color: var(--color-white);
 }
 
@@ -515,7 +515,7 @@ header.solid-header {
 }
 
 .grid-text.dark-card {
-  background: #2a2a2a;
+  background: #3A120E;
   color: var(--color-white);
 }
 
