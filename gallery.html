@@ -3,88 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie | Toulkine</title>
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <title>Galerie – Toulkine</title>
+    <link rel="stylesheet" href="css/style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="solid-header"><div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+
+    <header class="solid-header" id="main-header">
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
         <div class="header-content">
             <nav class="nav-left">
                 <hr class="nav-line">
-                <a href="index.html">Découvrir</a>
-                <a href="experiences.html">Expériences</a>
+                <a href="decouvrir.html">Découvrir</a>
+                <a href="patrimoine.html">Patrimoine</a>
+                <a href="circuits.html">Circuits</a>
             </nav>
             <div class="logo-center">
                 <a href="index.html"><img src="images/logo.png" alt="Logo Toulkine"></a>
             </div>
             <nav class="nav-right">
-                <a href="gallery.html" style="color: var(--color-primary);">Galerie</a>
-                <a href="shop.html">Coopérative</a>
+                <a href="acteurs.html">Acteurs Locaux</a>
+                <a href="gallery.html">Galerie</a>
                 <a href="contact.html">Contact</a>
                 <hr class="nav-line">
             </nav>
         </div>
     </header>
 
-    <div class="side-menu">
-        <a href="contact.html" title="Réservations"><i class="fas fa-clock"></i></a>
-        <a href="contact.html" title="Localisation"><i class="fas fa-map-marker-alt"></i></a>
-        <a href="gallery.html" title="Photos"><i class="fas fa-camera"></i></a>
-        <a href="shop.html" title="Coopérative"><i class="fas fa-shopping-basket"></i></a>
-    </div>
-
     <main>
+        <section class="page-hero page-hero-dark" style="background-image: url('images/rug-1.jpeg');">
+            <div class="page-hero-content">
+                <span class="section-label light">Section 7</span>
+                <h1>Galerie</h1>
+                <p>Toulkine en images</p>
+            </div>
+        </section>
+
+        <!-- ARTISANAT -->
         <section class="section-full pattern-bg">
             <div class="container">
-                <h1 class="section-title">Lumières du Douar</h1>
-                <p class="lead-text">
-                    La beauté de Toulkine réside dans ses contrastes. Les couleurs chaudes de la terre battue se fondent avec le vert des conifères et le bleu profond du ciel de l'Atlas. Découvrez l'âme de notre village à travers cette sélection de moments volés.
-                </p>
-
+                <span class="section-label">Artisanat</span>
+                <h2 class="section-title">Coopératives & Artisanat</h2>
                 <div class="bento-gallery">
-                    <div class="bento-item bento-large">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/View_of_Aroumd.jpg" alt="Le Douar au crépuscule">
-                    </div>
-                    <div class="bento-item bento-tall">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Cedrus_atlantica.jpg" alt="Forêts et sentiers sauvages">
-                    </div>
-                    <div class="bento-item bento-wide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Plateau_Yagour%2C_Agdal%2C_Morocco.jpg" alt="Sommets enneigés du Haut Atlas">
-                    </div>
-                    <div class="bento-item bento-small">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/DadesGorge.jpg" alt="Gorges Granitiques mystérieuses">
-                    </div>
-                    <div class="bento-item bento-wide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Tazalt4.jpg" alt="L'architecture traditionnelle de terre">
-                    </div>
-                    <div class="bento-item bento-small">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Panorama_Djebel_el_Kest.jpg" alt="Rassemblement Communautaire">
-                    </div>
+                    <div class="bento-item bento-large"><img src="images/rug-1.jpeg" alt="Tapis de Toulkine"></div>
+                    <div class="bento-item bento-tall"><img src="images/rug-2.jpeg" alt="Tissage"></div>
+                    <div class="bento-item"><img src="images/rug-3.jpeg" alt="Artisanat laine"></div>
+                    <div class="bento-item"><img src="images/rug-4.jpeg" alt="Tapis traditionnel"></div>
+                    <div class="bento-item bento-wide"><img src="images/rug-5.jpeg" alt="Production textile"></div>
+                    <div class="bento-item"><img src="images/rug-6.jpeg" alt="Laine locale"></div>
                 </div>
             </div>
         </section>
+
+        <!-- MIEL -->
+        <section class="section-full section-dark">
+            <div class="container">
+                <span class="section-label light">Produits</span>
+                <h2 class="section-title light">Miel & Produits de la ruche</h2>
+                <div class="bento-gallery">
+                    <div class="bento-item bento-tall"><img src="images/honey-1.jpeg" alt="Miel naturel"></div>
+                    <div class="bento-item bento-large"><img src="images/honey-2.jpeg" alt="Ruches"></div>
+                    <div class="bento-item"><img src="images/honey-3.jpeg" alt="Pollen"></div>
+                    <div class="bento-item"><img src="images/honey-4.jpeg" alt="Propolis"></div>
+                    <div class="bento-item"><img src="images/honey-5.jpeg" alt="Miel du Haut Atlas"></div>
+                    <div class="bento-item bento-wide"><img src="images/honey-6.jpeg" alt="Récolte du miel"></div>
+                    <div class="bento-item"><img src="images/honey-7.jpeg" alt="Miel local"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÉLEVAGE -->
+        <section class="section-full pattern-bg">
+            <div class="container">
+                <span class="section-label">Élevage</span>
+                <h2 class="section-title">Élevage caprin</h2>
+                <div class="bento-gallery">
+                    <div class="bento-item bento-wide"><img src="images/animal-1.jpeg" alt="Chèvres de Toulkine"></div>
+                    <div class="bento-item"><img src="images/animal-2.jpeg" alt="Élevage"></div>
+                    <div class="bento-item bento-tall"><img src="images/animal-3.jpeg" alt="Troupeau"></div>
+                    <div class="bento-item"><img src="images/animal-4.jpeg" alt="Pastoralisme"></div>
+                    <div class="bento-item bento-large"><img src="images/animal-5.jpeg" alt="Vie pastorale"></div>
+                    <div class="bento-item"><img src="images/animal-6.jpeg" alt="Chèvres du Atlas"></div>
+                    <div class="bento-item"><img src="images/animal-7.jpeg" alt="Beurre de chèvre"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PEINTURES RUPESTRES -->
+        <section class="section-full section-dark">
+            <div class="container">
+                <span class="section-label light">Patrimoine</span>
+                <h2 class="section-title light">Peintures rupestres d'Amzri</h2>
+                <div class="bento-gallery">
+                    <div class="bento-item bento-large"><img src="images/cave-1.jpeg" alt="Art rupestre 1"></div>
+                    <div class="bento-item"><img src="images/cave-2.jpeg" alt="Grotte d'Amzri"></div>
+                    <div class="bento-item bento-tall"><img src="images/cave-3.jpeg" alt="Peintures rupestres"></div>
+                    <div class="bento-item"><img src="images/cave-4.jpeg" alt="Figures géométriques"></div>
+                    <div class="bento-item"><img src="images/cave-5.jpeg" alt="Ocre rouge"></div>
+                    <div class="bento-item bento-wide"><img src="images/cave-6.jpeg" alt="Art préhistorique"></div>
+                    <div class="bento-item"><img src="images/cave-7.jpeg" alt="Patrimoine archéologique"></div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-        <footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <h2 class="footer-logo">TOULKINE</h2>
-                <p>Des racines au sommet.<br>Une expérience inoubliable au cœur du Haut Atlas.</p>
+                <p>Au cœur du Haut Atlas<br>Un territoire de nature, d'histoire et de savoir-faire.</p>
             </div>
             <div class="footer-links">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href="index.html">Découvrir</a></li>
-                    <li><a href="experiences.html">Expériences</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="decouvrir.html">Découvrir</a></li>
+                    <li><a href="patrimoine.html">Patrimoine</a></li>
+                    <li><a href="circuits.html">Circuits</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h3>Informations</h3>
                 <ul>
-                    <li><a href="shop.html">La Coopérative</a></li>
-                    <li><a href="contact.html">Nous Contacter</a></li>
+                    <li><a href="acteurs.html">Acteurs Locaux</a></li>
+                    <li><a href="resilience.html">Résilience</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-social">
@@ -96,7 +141,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024-2025 Toulkine. Tous droits réservés.</p>
+            <p>&copy; Toulkine – Tous droits réservés.</p>
         </div>
     </footer>
 

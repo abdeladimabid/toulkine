@@ -1,45 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const mobileMenuBtn = document.getElementById('mobile-menu');
-  const header = document.querySelector('header');
+// Mobile nav toggle
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('mobile-menu');
+  const header = document.getElementById('main-header');
 
-  if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', () => {
+  if (toggle && header) {
+    toggle.addEventListener('click', function () {
       header.classList.toggle('nav-active');
-      
-      // Change icon from bars to times when active
-      const icon = mobileMenuBtn.querySelector('i');
+      const icon = toggle.querySelector('i');
       if (header.classList.contains('nav-active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
+        icon.classList.replace('fa-bars', 'fa-times');
       } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
+        icon.classList.replace('fa-times', 'fa-bars');
       }
+    });
+
+    // Close on nav link click
+    header.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        header.classList.remove('nav-active');
+        const icon = toggle.querySelector('i');
+        icon.classList.replace('fa-times', 'fa-bars');
+      });
     });
   }
-
-  // Active Link Highlighting
-  const currentPath = window.location.pathname.split('/').pop();
-  const navItems = document.querySelectorAll('header a');
-  
-  navItems.forEach(item => {
-    const href = item.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      // Don't add active color if it's the logo
-      if (!item.querySelector('img')) {
-        item.style.color = 'var(--color-primary)';
-      }
-    }
-  });
-
-  // Form handling (prevent default for demo purposes)
-  const forms = document.querySelectorAll('form');
-  forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.');
-      form.reset();
-    });
-  });
 });

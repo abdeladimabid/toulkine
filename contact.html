@@ -3,121 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Toulkine</title>
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <title>Contact & Visite – Toulkine</title>
+    <link rel="stylesheet" href="css/style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="solid-header"><div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+
+    <header class="solid-header" id="main-header">
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
         <div class="header-content">
             <nav class="nav-left">
                 <hr class="nav-line">
-                <a href="index.html">Découvrir</a>
-                <a href="experiences.html">Expériences</a>
+                <a href="decouvrir.html">Découvrir</a>
+                <a href="patrimoine.html">Patrimoine</a>
+                <a href="circuits.html">Circuits</a>
             </nav>
             <div class="logo-center">
                 <a href="index.html"><img src="images/logo.png" alt="Logo Toulkine"></a>
             </div>
             <nav class="nav-right">
+                <a href="acteurs.html">Acteurs Locaux</a>
                 <a href="gallery.html">Galerie</a>
-                <a href="shop.html">Coopérative</a>
-                <a href="contact.html" style="color: var(--color-primary);">Contact</a>
+                <a href="contact.html">Contact</a>
                 <hr class="nav-line">
             </nav>
         </div>
     </header>
 
-    <div class="side-menu">
-        <a href="contact.html" title="Réservations"><i class="fas fa-clock"></i></a>
-        <a href="contact.html" title="Localisation"><i class="fas fa-map-marker-alt"></i></a>
-        <a href="gallery.html" title="Photos"><i class="fas fa-camera"></i></a>
-        <a href="shop.html" title="Coopérative"><i class="fas fa-shopping-basket"></i></a>
-    </div>
-
     <main>
+        <section class="page-hero page-hero-dark" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Panorama_Djebel_el_Kest.jpg');">
+            <div class="page-hero-content">
+                <span class="section-label light">Section 8</span>
+                <h1>Contact & Visite</h1>
+                <p>Préparez votre découverte de Toulkine</p>
+            </div>
+        </section>
+
+        <!-- INTRO + FORM + MAP -->
         <section class="section-full pattern-bg">
             <div class="container">
-                <h1 class="section-title">Rejoindre Toulkine</h1>
-                <p class="lead-text">
-                    Le voyage vers Toulkine fait partie de l'expérience. Quittez la ville impériale et laissez la route s'élever vers le silence réparateur des montagnes.
-                </p>
-                
                 <div class="contact-map-grid">
-                    <div class="contact-text-card">
-                        <h2>Itinéraire depuis Marrakech</h2>
-                        <p>À exactement 77 kilomètres de la ville rouge, Toulkine vous attend au cœur de la commune d'Azgour.</p>
-                        
-                        <div class="itinerary-timeline">
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                <div class="step-content">
-                                    <h3>Départ : Marrakech</h3>
-                                    <p>Quittez la ville en empruntant la route régionale R212, une belle route goudronnée à travers les plaines.</p>
+
+                    <!-- FORM CARD -->
+                    <div class="contact-box">
+                        <h2 class="contact-box-title">Nous contacter</h2>
+                        <p class="contact-box-desc">Vous souhaitez découvrir Toulkine, parcourir ses circuits, rencontrer ses coopératives ou en savoir davantage sur son patrimoine ? Contactez-nous pour obtenir des informations.</p>
+                        <form>
+                            <input type="text" class="form-control" placeholder="Votre nom complet" required>
+                            <input type="email" class="form-control" placeholder="Adresse Email" required>
+                            <input type="tel" class="form-control" placeholder="Numéro de téléphone" required>
+                            <input type="text" class="form-control" placeholder="Sujet de votre message" required>
+                            <textarea class="form-control" placeholder="Votre message..." required></textarea>
+                            <button type="submit" class="btn-submit">Envoyer</button>
+                        </form>
+                    </div>
+
+                    <!-- MAP CARD -->
+                    <div class="map-card">
+                        <h2 class="contact-box-title">Localisation</h2>
+                        <div class="location-info">
+                            <div class="location-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Douar Toulkine</strong>
+                                    <span>Commune d'Azgour</span>
+                                    <span>Province d'Al Haouz</span>
+                                    <span>Région Marrakech-Safi, Maroc</span>
                                 </div>
                             </div>
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-route"></i></div>
-                                <div class="step-content">
-                                    <h3>Amizmiz & Azgour</h3>
-                                    <p>Traversez les magnifiques paysages vallonnés en passant par Amizmiz jusqu'à atteindre la commune d'Azgour.</p>
-                                </div>
-                            </div>
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-mountain"></i></div>
-                                <div class="step-content">
-                                    <h3>Ascension de l'Atlas</h3>
-                                    <p>La dernière portion de la route serpente vers les cimes. L'utilisation d'un véhicule 4x4 robuste est recommandée.</p>
-                                </div>
-                            </div>
-                            <div class="itinerary-step">
-                                <div class="step-icon"><i class="fas fa-flag-checkered"></i></div>
-                                <div class="step-content">
-                                    <h3>Arrivée : Toulkine</h3>
-                                    <p>Bienvenue dans notre village, perché dans son sanctuaire naturel.</p>
+                            <div class="location-item">
+                                <i class="fas fa-crosshairs"></i>
+                                <div>
+                                    <strong>Coordonnées géographiques</strong>
+                                    <span>31.16288° N – 8.33055° O</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="map-frame">
+                            <iframe
+                                src="https://maps.google.com/maps?f=d&source=s_d&saddr=Marrakech,+Morocco&daddr=Toulkine,+Al+Haouz,+Morocco&hl=fr&output=embed"
+                                width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="map-buttons">
+                            <a href="https://www.google.com/maps?q=31.16288,+-8.33055" target="_blank" class="btn-map"><i class="fas fa-map-marked-alt"></i> Voir sur Google Maps</a>
+                        </div>
+                        <p class="stats-note" style="margin-top:1rem;">Les modalités de visite, les contacts locaux et les conditions d'accueil seront précisés après validation avec les acteurs du territoire.</p>
                     </div>
-                    <div class="contact-map-card">
-                        <iframe src="https://maps.google.com/maps?f=d&source=s_d&saddr=Marrakech,+Morocco&daddr=Toulkine,+Morocco&hl=fr&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
 
-                <div class="contact-box">
-                    <h2 class="contact-box-title">Écrivez-nous</h2>
-                    <p class="contact-box-desc">Vous souhaitez organiser une visite, participer à un programme d'éco-volontariat ou simplement poser une question ? Notre équipe locale est à votre disposition.</p>
-                    <form>
-                        <input type="text" class="form-control" placeholder="Votre nom complet" required>
-                        <input type="email" class="form-control" placeholder="Adresse Email" required>
-                        <input type="tel" class="form-control" placeholder="Numéro de téléphone" required>
-                        <input type="text" class="form-control" placeholder="Sujet de votre message" required>
-                        <textarea class="form-control" placeholder="Votre message..." required></textarea>
-                        <button type="submit" class="btn-submit">Envoyer</button>
-                    </form>
                 </div>
             </div>
         </section>
+
+        <!-- ITINÉRAIRE -->
+        <section class="section-full section-dark">
+            <div class="container">
+                <span class="section-label light">Comment venir</span>
+                <h2 class="section-title light">L'itinéraire depuis Marrakech</h2>
+                <div class="itinerary-timeline">
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fas fa-city"></i></div>
+                        <div class="step-content">
+                            <h3>Marrakech</h3>
+                            <p>Point de départ. Prendre la route en direction d'Amizmiz.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fas fa-road"></i></div>
+                        <div class="step-content">
+                            <h3>Route vers Amizmiz</h3>
+                            <p>Environ 60 km au sud-ouest de Marrakech, en direction du Haut Atlas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fas fa-mountain"></i></div>
+                        <div class="step-content">
+                            <h3>Commune d'Azgour</h3>
+                            <p>Pénétrer dans la commune d'Azgour en remontant vers les sommets du Haut Atlas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-icon"><i class="fas fa-home"></i></div>
+                        <div class="step-content">
+                            <h3>Douar Toulkine</h3>
+                            <p>Arrivée à Toulkine, à environ 1 700 mètres d'altitude. Environ 70 km de Marrakech au total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-        <footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <h2 class="footer-logo">TOULKINE</h2>
-                <p>Des racines au sommet.<br>Une expérience inoubliable au cœur du Haut Atlas.</p>
+                <p>Au cœur du Haut Atlas<br>Un territoire de nature, d'histoire et de savoir-faire.</p>
             </div>
             <div class="footer-links">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href="index.html">Découvrir</a></li>
-                    <li><a href="experiences.html">Expériences</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="decouvrir.html">Découvrir</a></li>
+                    <li><a href="patrimoine.html">Patrimoine</a></li>
+                    <li><a href="circuits.html">Circuits</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h3>Informations</h3>
                 <ul>
-                    <li><a href="shop.html">La Coopérative</a></li>
-                    <li><a href="contact.html">Nous Contacter</a></li>
+                    <li><a href="acteurs.html">Acteurs Locaux</a></li>
+                    <li><a href="resilience.html">Résilience</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-social">
@@ -129,7 +168,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024-2025 Toulkine. Tous droits réservés.</p>
+            <p>&copy; Toulkine – Tous droits réservés.</p>
         </div>
     </footer>
 
