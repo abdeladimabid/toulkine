@@ -154,7 +154,8 @@ header.solid-header {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Panorama_Djebel_el_Kest.jpg') center/cover no-repeat;
+  /* Original hero: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Panorama_Djebel_el_Kest.jpg') */
+  background: url('../images/home.jpeg') center/cover no-repeat;
 }
 
 .hero::after {
